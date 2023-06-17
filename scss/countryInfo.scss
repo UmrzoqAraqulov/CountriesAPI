@@ -1,0 +1,65 @@
+ @import "mixin";
+
+ main {
+   margin: 200px 60px 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 40px;
+   flex-wrap: wrap;
+
+   .img {
+     width: 50%;
+
+     img {
+       width: 100%;
+     }
+   }
+
+   .card {
+     width: 45%;
+
+     .tit {
+       font-size: 30px;
+       padding: 10px 0px;
+     }
+
+     .info {
+       font-weight: 700;
+       font-size: 16px;
+       padding: 5px 0px;
+
+       span {
+         font-weight: 400;
+         padding: 0px 10px;
+         border-radius: 5px;
+       }
+     }
+   }
+ }
+
+ @media(max-width:930px) {
+   main {
+     flex-direction: column;
+
+     .img {
+       width: 70%;
+     }
+
+     .card {
+       width: 100%;
+       text-align: center;
+     }
+   }
+ }
+
+ @media(max-width:600px) {
+   main {
+     flex-direction: column;
+
+     .img {
+       width: 100%;
+     }
+
+   }
+ }

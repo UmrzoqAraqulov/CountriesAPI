@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countries</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/home.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/card.min.css">
+  <!-- Js -->
+  <script defer src="js/cardRow.js"></script>
+  <script defer src="js/theme.js"></script>
+  <script defer src="js/home.js"></script>
+
+
+</head>
+
+<body>
+  <div class="load">
+
+  </div>
+  <div class="nav">
+    <div class="container">
+      <h2 class="nav-title">Where in the world?</h2>
+      <div class="nav-left">
+        <div class="dark-mode">
+          <i class="dark fa-solid fa-sun"></i>
+          <i class="mode fa-solid fa-moon"></i>
+        </div>
+        <p class="tex">Dark Mode</p>
+      </div>
+    </div>
+  </div>
+
+  <main class="container">
+    <div class="filter">
+      <div class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="search" placeholder="Search for a country…">
+      </div>
+      <select name="region" id="region">
+        <option value="All">Filter by Region</option>
+      </select>
+    </div>
+
+    <div class="card-row">
+
+    </div>
+    <div id="pagination-container"></div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.js"></script>
+</body>
+
+</html>
